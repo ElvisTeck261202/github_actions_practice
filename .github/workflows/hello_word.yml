@@ -1,0 +1,14 @@
+name: nuestro_primer_workflow_en_github
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+    
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello-world
+        run: "echo 'Hola mundo!!'"
